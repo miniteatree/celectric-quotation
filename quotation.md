@@ -33,6 +33,9 @@ This structure is suitable for Celectric because it keeps the public website fas
 - homepage
 - product listing pages
 - product detail pages
+- model number / configuration landing pages for Google Search
+- configuration URL support such as `/configuration/{product_id}?params=...`
+- SEO-friendly canonical pages for important individual model numbers
 - brand pages
 - category pages
 - multi-category product organisation where relevant
@@ -49,6 +52,8 @@ This structure is suitable for Celectric because it keeps the public website fas
 - product datasheet / document mapping for imported products
 - import-ready category, brand, specification, and document fields
 - related products data structure and admin linking fields
+- model number / configuration field mapping for imported products
+- canonical URL handling for individual model-number pages
 - category CRUD
 - brand CRUD
 - product image upload
@@ -77,7 +82,7 @@ This structure is suitable for Celectric because it keeps the public website fas
 - frontend display for related products / suggested products
 - related content / articles
 - resource center support
-- SEO landing pages
+- SEO landing page refinement for model-number search demand
 - large-catalog browsing refinement
 
 ---
