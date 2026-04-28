@@ -45,6 +45,8 @@ This structure is suitable for Celectric because it keeps the public website fas
 - brand CRUD
 - product image upload
 - product specification PDF upload
+- organised product datasheet and download section
+- document type labels such as datasheet, manual, certificate, and wiring diagram
 - Cloudflare R2 storage setup for product images and product specification PDFs
 - publish / unpublish control
 - sorting control
@@ -67,7 +69,6 @@ This structure is suitable for Celectric because it keeps the public website fas
 - related content / articles
 - resource center support
 - SEO landing pages
-- better document grouping rules
 - large-catalog browsing refinement
 
 ---
