@@ -1,7 +1,9 @@
-# Celectric Website Redesign Quotation
+# Celectric Website Redesign Proposal
 
 ## Purpose
-Client-facing quotation for Celectric website redesign and digital platform upgrade.
+Client-facing proposal for Celectric website redesign and digital platform upgrade.
+
+This version is prepared **without pricing** for online review and scope discussion.
 
 ## Project Direction
 Celectric website should be built as an **industrial catalog + enquiry platform**, not only a static company profile website.
@@ -12,7 +14,7 @@ The platform should support:
 - quotation / enquiry flow
 - product specification documents
 - future client portal and order document access
-- scalable product growth around **3,000+ products**
+- scalable product growth around 3,000+ products
 
 ## Recommended Architecture
 Use a **hybrid architecture**:
@@ -51,9 +53,6 @@ This structure is suitable for Celectric because it keeps the public website fas
 - static export foundation
 - incremental rebuild flow for changed products and affected related pages
 
-### Estimated Price
-**RM 28,000 – RM 54,000**
-
 ---
 
 ## Phase 2 — Sales Flow & Lead Handling Enhancements
@@ -71,9 +70,6 @@ This structure is suitable for Celectric because it keeps the public website fas
 - SEO landing pages
 - better document grouping rules
 - large-catalog browsing refinement
-
-### Estimated Price
-**RM 8,000 – RM 16,000**
 
 ---
 
@@ -96,27 +92,12 @@ This structure is suitable for Celectric because it keeps the public website fas
 - admin can reset password or send invitation link
 - optional Odoo / CRM integration planning if needed
 
-### Estimated Price
-**RM 18,000 – RM 42,000**
-
 ---
 
-## Recommended Total
-
-| Structure | Estimated Amount |
-|---|---:|
-| Lean quote | **RM 54,000** |
-| Comfortable full-scope quote | **RM 68,000 – RM 78,000** |
-| Upper range | **RM 112,000** |
-
-## Suggested Client-Facing Target
-Recommended proposal target for full Phase 1–3 scope:
-
-**RM 68,000 – RM 78,000**
-
-If Celectric wants an MVP first, start with Phase 1 only:
-
-**RM 28,000 – RM 54,000**
+## Recommended Commercial Structure
+- Start with Phase 1 as the MVP launch scope
+- Add Phase 2 after the main website structure is stable
+- Keep Phase 3 as the client portal and operational expansion phase
 
 ---
 
@@ -128,12 +109,12 @@ Recommended separation:
 - `product-specifications/` — public download or protected download depending on business rule
 - `order-documents/` — private access only, using signed download links
 
-Estimated Cloudflare R2 storage budget for around **3,000+ products**:
-- 20GB total storage: around **RM 10/year**
-- 50GB total storage: around **RM 20–30/year**
-- 100GB total storage: around **RM 50–60/year**
+Access rules:
+- product images can be public/CDN-friendly for fast website loading
+- product specification PDFs can be public downloads unless Celectric wants restricted access
+- order/client documents must be private and accessed through secure signed links after login
 
-Monthly cloud storage cost is expected to be low. The main cost is implementation: upload flow, metadata management, access control, signed links, and admin/client UI.
+The main implementation work is upload flow, metadata management, access control, signed links, and admin/client UI.
 
 ---
 
@@ -154,8 +135,8 @@ For this project, same database with role-based access is simpler, cheaper, and 
 
 ---
 
-## Pricing Depends On
-Final pricing depends on:
+## Scope Depends On
+Final scope depends on:
 - exact product count and product data cleanliness
 - content migration workload
 - admin customisation depth
