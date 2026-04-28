@@ -3,7 +3,6 @@
 ## Purpose
 Client-facing proposal for Celectric website redesign and digital platform upgrade.
 
-This version is prepared **without pricing** for online review and scope discussion.
 
 ## Project Direction
 Celectric website should be built as an **industrial catalog + enquiry platform**, not only a static company profile website.
