@@ -100,6 +100,29 @@ This structure is suitable for Celectric because it keeps the public website fas
 
 ---
 
+## Estimated Completion Timeline
+
+Recommended delivery timeline:
+- Phase 1 — Core website + lightweight admin dashboard: **8–12 weeks**
+- Phase 2 — Sales flow & lead handling enhancements: **3–5 weeks**
+- Phase 3 — Client portal, order history & operational enhancements: **6–10 weeks**
+
+If all phases are done continuously, the full project is estimated at around **17–27 weeks**.
+
+Suggested rollout approach:
+- Launch Phase 1 first as the public website MVP
+- Start Phase 2 after the main website structure and product data flow are stable
+- Start Phase 3 after client account, order, and document workflow requirements are confirmed
+
+Timeline depends on:
+- speed of content and product data preparation
+- number of product records to clean or migrate
+- feedback and approval turnaround time
+- final admin workflow complexity
+- integration requirements, if any
+
+---
+
 ## Storage Recommendation
 Use **Cloudflare R2** for product images, product specification PDFs, and private order/client documents.
 
