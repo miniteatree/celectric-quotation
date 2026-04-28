@@ -48,6 +48,7 @@ This structure is suitable for Celectric because it keeps the public website fas
 - product specification / attribute fields where needed
 - product datasheet / document mapping for imported products
 - import-ready category, brand, specification, and document fields
+- related products data structure and admin linking fields
 - category CRUD
 - brand CRUD
 - product image upload
@@ -73,7 +74,7 @@ This structure is suitable for Celectric because it keeps the public website fas
 - better conversion-focused page structure
 - autocomplete search via Laravel API
 - filtering refinement via Laravel API
-- related products / suggested products
+- frontend display for related products / suggested products
 - related content / articles
 - resource center support
 - SEO landing pages
