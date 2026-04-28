@@ -41,6 +41,10 @@ This structure is suitable for Celectric because it keeps the public website fas
 - mobile responsive cleanup
 - lightweight admin dashboard
 - product CRUD
+- product data entry structure for catalog fields
+- product category assignment
+- product brand assignment
+- product specification / attribute fields where needed
 - category CRUD
 - brand CRUD
 - product image upload
@@ -59,13 +63,14 @@ This structure is suitable for Celectric because it keeps the public website fas
 ## Phase 2 — Sales Flow & Lead Handling Enhancements
 
 ### Includes
+- sales and conversion improvements after the core product data structure is ready
 - stronger CTA flow
 - enquiry funnel improvements
 - lead capture refinement
 - better conversion-focused page structure
 - autocomplete search via Laravel API
 - filtering refinement via Laravel API
-- related products
+- related products / suggested products
 - related content / articles
 - resource center support
 - SEO landing pages
