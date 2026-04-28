@@ -98,6 +98,7 @@ This structure is suitable for Celectric because it keeps the public website fas
 - admin can assign orders to specific clients
 - admin can enable / disable client accounts
 - admin can reset password or send invitation link
+- HubSpot CRM integration planning and connection if required
 - optional Odoo / CRM integration planning if needed
 
 ---
@@ -114,7 +115,7 @@ This structure is suitable for Celectric because it keeps the public website fas
 Recommended delivery timeline:
 - Phase 1 — Core website + lightweight admin dashboard, including product data import preparation: **8–12 weeks**
 - Phase 2 — Sales flow & lead handling enhancements: **3–5 weeks**
-- Phase 3 — Client portal, order history & operational enhancements: **6–10 weeks**
+- Phase 3 — Client portal, order history, HubSpot/CRM integration & operational enhancements: **6–10 weeks**
 
 If all phases are done continuously, the full project is estimated at around **17–27 weeks**.
 
@@ -128,7 +129,7 @@ Timeline depends on:
 - number of product records to clean or migrate
 - feedback and approval turnaround time
 - final admin workflow complexity
-- integration requirements, if any
+- HubSpot / CRM / Odoo integration requirements, if any
 
 ---
 
