@@ -41,10 +41,13 @@ This structure is suitable for Celectric because it keeps the public website fas
 - mobile responsive cleanup
 - lightweight admin dashboard
 - product CRUD
+- product data import preparation and import-ready field structure
 - product data entry structure for catalog fields
 - product category assignment
 - product brand assignment
 - product specification / attribute fields where needed
+- product datasheet / document mapping for imported products
+- import-ready category, brand, specification, and document fields
 - category CRUD
 - brand CRUD
 - product image upload
@@ -63,7 +66,7 @@ This structure is suitable for Celectric because it keeps the public website fas
 ## Phase 2 — Sales Flow & Lead Handling Enhancements
 
 ### Includes
-- sales and conversion improvements after the core product data structure is ready
+- sales and conversion improvements after the core product data import and product structure are ready
 - stronger CTA flow
 - enquiry funnel improvements
 - lead capture refinement
@@ -109,7 +112,7 @@ This structure is suitable for Celectric because it keeps the public website fas
 ## Estimated Completion Timeline
 
 Recommended delivery timeline:
-- Phase 1 — Core website + lightweight admin dashboard: **8–12 weeks**
+- Phase 1 — Core website + lightweight admin dashboard, including product data import preparation: **8–12 weeks**
 - Phase 2 — Sales flow & lead handling enhancements: **3–5 weeks**
 - Phase 3 — Client portal, order history & operational enhancements: **6–10 weeks**
 
