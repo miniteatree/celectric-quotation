@@ -397,13 +397,14 @@ Phase 1 includes selected important model-number SEO pages and **basic launch se
 
 Recommended Phase 1 delivery timeline: **12–18 weeks**
 
-Indicative milestone sequence:
-- Phase 1A — 1–2 weeks
-- Phase 1B — 2–3 weeks
-- Phase 1C — 3 weeks
-- Phase 1D — 3–5 weeks
-- Phase 1E — 2–3 weeks
-- Phase 1F — 2–3 weeks
+| Milestone | Estimated Duration | Main Focus |
+|---|---:|---|
+| Phase 1A | 1–2 weeks | Discovery, sitemap, technical planning, and content/data structure confirmation |
+| Phase 1B | 2–3 weeks | UI direction, page templates, responsive frontend foundation, and revision rounds |
+| Phase 1C | 3 weeks | Product catalog structure, listing/detail patterns, brands, categories, and model/configuration URL planning |
+| Phase 1D | 3–5 weeks | Lightweight admin dashboard, CRUD management, publish controls, sorting, and SEO fields |
+| Phase 1E | 2–3 weeks | RFQ/enquiry flow, document upload, Cloudflare R2 storage setup, and datasheet/download section |
+| Phase 1F | 2–3 weeks | Manual batch static publish setup, static deployment, testing, documentation, handover, and launch support |
 
 Timeline depends on:
 - speed of content and product data preparation

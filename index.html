@@ -27,115 +27,214 @@
     nav{position:sticky;top:18px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 12px 32px rgba(15,23,42,.06);max-height:calc(100vh - 36px);overflow:auto}
     nav .title{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:900;margin-bottom:8px}
     nav ul{list-style:none;padding-left:0;margin:0} nav li{margin:6px 0} nav a{color:#334155;text-decoration:none;font-size:14px} nav a:hover{color:var(--brand)}
-    article{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:34px;box-shadow:0 16px 45px rgba(15,23,42,.07)}
-    .meta{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:14px;margin-bottom:18px}
+    article{background:transparent;border:0;padding:0;box-shadow:none}
+    .meta{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:14px;margin-bottom:18px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 18px}
+    article>section.level1{display:grid;gap:18px}
     article h1{font-size:38px;line-height:1.12;margin:0 0 18px;letter-spacing:-.03em}
-    article h2{margin-top:36px;padding-top:10px;border-top:1px solid var(--line);font-size:27px;letter-spacing:-.02em}
-    article h3{margin-top:28px;font-size:21px}
+    article h2{margin:0 0 12px;font-size:27px;letter-spacing:-.02em}
+    article h3{margin-top:22px;font-size:21px}
+    section.level2{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:0 16px 45px rgba(15,23,42,.07)}
+    section.level2:hover{border-color:#c4d4ea;box-shadow:0 18px 50px rgba(15,23,42,.09)}
+    section.level3{border-top:1px solid var(--line);margin-top:22px;padding-top:4px}
     p{margin:12px 0} ul,ol{padding-left:24px} li{margin:6px 0} strong{color:#07142f} code{background:#eef2f7;border:1px solid #e2e8f0;padding:2px 6px;border-radius:7px;font-size:.92em}
-    table{width:100%;border-collapse:separate;border-spacing:0;margin:18px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+    table{width:100%;border-collapse:separate;border-spacing:0;margin:18px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:white}
     th,td{padding:12px 13px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left} th{background:var(--soft);font-weight:900} tr:last-child td{border-bottom:0}
     blockquote{margin:18px 0;padding:14px 18px;border-left:4px solid var(--brand);background:#f8fbff;border-radius:12px;color:#334155}
     hr{border:0;border-top:1px solid var(--line);margin:32px 0}
-
-    .toc ul{list-style:none;padding-left:0;margin:0}.toc ul ul{padding-left:14px;margin-top:4px;border-left:1px solid var(--line)}.toc li{margin:6px 0}.toc a{display:block;padding:4px 0;color:#334155;text-decoration:none}.toc a:hover{color:var(--brand)}.toc-lvl-1 a{font-weight:800}.toc-lvl-3 a{padding-left:14px;font-size:13px;color:#64748b}
-    .heading-anchor{color:inherit;text-decoration:none}.heading-anchor:hover{color:var(--brand)}.heading-anchor::after{content:" #";opacity:0;margin-left:6px;color:var(--brand);font-weight:700}.heading-anchor:hover::after{opacity:.65}
-    @media(max-width:880px){.layout{grid-template-columns:1fr} nav{position:relative;top:auto;max-height:none} article{padding:24px}}
-    @media print{body{background:white} .hero,nav{display:none} main{padding:0} article{box-shadow:none;border:0;border-radius:0}}
+    .toc ul{list-style:none;padding-left:0;margin:0}.toc ul ul{padding-left:14px;margin-top:4px;border-left:1px solid var(--line)}.toc li{margin:6px 0}.toc a{display:block;padding:4px 0;color:#334155;text-decoration:none}.toc a:hover{color:var(--brand)}
+    @media(max-width:880px){.layout{grid-template-columns:1fr} nav{position:relative;top:auto;max-height:none} section.level2{padding:22px;overflow:auto}}
+    @media print{body{background:white} .hero,nav{display:none} main{padding:0} .meta,section.level2{box-shadow:none;border:0;border-radius:0;padding:0}}
   </style>
 </head>
 <body>
   <section class="hero"><div class="wrap">
     <h1>Celectric Website Redesign Quotation</h1>
-    <p>Phase 1 quotation with clarified search/filter scope, configurator scope, UI deliverables, handover, warranty, and Laravel SSR + Redis/CDN architecture direction.</p>
-    <div class="badges"><span class="badge">Phase 1: RM 54,000</span><span class="badge">Laravel SSR + Redis/CDN</span><span class="badge">60-day bug-fix warranty</span></div>
+    <p>Phase 1 quotation with clarified search/filter scope, configurator scope, UI deliverables, handover, warranty, and Laravel/static publishing architecture direction.</p>
+    <div class="badges"><span class="badge">Phase 1: RM 54,000</span><span class="badge">Timeline table view</span><span class="badge">Section card view</span></div>
     <div class="actions"><a class="btn primary" href="CLIENT_PROPOSAL.pdf">Download PDF</a><a class="btn secondary" href="quotation.md">View Markdown</a></div>
   </div></section>
   <main><div class="wrap layout">
-    <nav><div class="title">Contents</div>
-<div class="toc"><ul>
-<li class="toc-lvl-1"><a href="#celectric-website-redesign-quotation">Celectric Website Redesign Quotation</a></li>
-<li class="toc-lvl-2"><a href="#purpose">Purpose</a></li>
-<li class="toc-lvl-2"><a href="#project-direction">Project Direction</a></li>
-<li class="toc-lvl-2"><a href="#recommended-architecture">Recommended Architecture</a></li>
-<li class="toc-lvl-2"><a href="#quoted-scope-phase-1-only">Quoted Scope — Phase 1 Only</a></li>
-<li class="toc-lvl-1"><a href="#phase-1-core-website-lightweight-admin-dashboard">Phase 1 — Core Website + Lightweight Admin Dashboard</a></li>
-<li class="toc-lvl-2"><a href="#phase-1-total-price">Phase 1 Total Price</a></li>
-<li class="toc-lvl-2"><a href="#phase-1-milestone-breakdown">Phase 1 Milestone Breakdown</a></li>
-<li class="toc-lvl-2"><a href="#phase-1-detailed-scope">Phase 1 Detailed Scope</a></li>
-<li class="toc-lvl-2"><a href="#billing-method">Billing Method</a></li>
-<li class="toc-lvl-2"><a href="#reference-roadmap-only-not-included-in-price">Reference Roadmap Only — Not Included In Price</a></li>
-<li class="toc-lvl-2"><a href="#phase-2-sales-flow-lead-handling-enhancements">Phase 2 — Sales Flow &amp; Lead Handling Enhancements</a></li>
-<li class="toc-lvl-2"><a href="#phase-3-client-portal-order-history-operational-enhancements">Phase 3 — Client Portal, Order History &amp; Operational Enhancements</a></li>
-<li class="toc-lvl-2"><a href="#estimated-timeline">Estimated Timeline</a></li>
-<li class="toc-lvl-2"><a href="#storage-recommendation">Storage Recommendation</a></li>
-<li class="toc-lvl-2"><a href="#architecture-note-manual-batch-static-publish-vs-laravel-ssr">Architecture Note — Manual Batch Static Publish vs Laravel SSR</a></li>
-<li class="toc-lvl-2"><a href="#scope-assumptions">Scope Assumptions</a></li>
-</ul></div>
-    </nav>
+    <nav><div class="title">Contents</div><div class="toc"><ul>
+<li><a href="#celectric-website-redesign-quotation"
+id="toc-celectric-website-redesign-quotation">Celectric Website Redesign
+Quotation</a>
+<ul>
+<li><a href="#purpose" id="toc-purpose">Purpose</a></li>
+<li><a href="#project-direction" id="toc-project-direction">Project
+Direction</a></li>
+<li><a href="#recommended-architecture"
+id="toc-recommended-architecture">Recommended Architecture</a></li>
+<li><a href="#quoted-scope--phase-1-only"
+id="toc-quoted-scope--phase-1-only">Quoted Scope — Phase 1 Only</a></li>
+</ul></li>
+<li><a href="#phase-1--core-website--lightweight-admin-dashboard"
+id="toc-phase-1--core-website--lightweight-admin-dashboard">Phase 1 —
+Core Website + Lightweight Admin Dashboard</a>
+<ul>
+<li><a href="#phase-1-total-price" id="toc-phase-1-total-price">Phase 1
+Total Price</a></li>
+<li><a href="#phase-1-milestone-breakdown"
+id="toc-phase-1-milestone-breakdown">Phase 1 Milestone
+Breakdown</a></li>
+<li><a href="#phase-1-detailed-scope"
+id="toc-phase-1-detailed-scope">Phase 1 Detailed Scope</a>
+<ul>
+<li><a href="#public-website" id="toc-public-website">Public
+Website</a></li>
+<li><a href="#phase-1-search--filter-scope"
+id="toc-phase-1-search--filter-scope">Phase 1 Search / Filter
+Scope</a></li>
+<li><a href="#ui--design-scope-for-phase-1b"
+id="toc-ui--design-scope-for-phase-1b">UI / Design Scope for Phase
+1B</a></li>
+<li><a href="#product-catalog-foundation"
+id="toc-product-catalog-foundation">Product Catalog Foundation</a></li>
+<li><a href="#option-architecture--function-of-each-table"
+id="toc-option-architecture--function-of-each-table">Option Architecture
+— Function of Each Table</a></li>
+<li><a href="#manual-batch-static-publish-compatibility"
+id="toc-manual-batch-static-publish-compatibility">Manual Batch Static
+Publish Compatibility</a></li>
+<li><a href="#configurator-vs-autocomplete--filter"
+id="toc-configurator-vs-autocomplete--filter">Configurator vs
+Autocomplete / Filter</a></li>
+<li><a href="#three-layer-product-url-architecture"
+id="toc-three-layer-product-url-architecture">Three-Layer Product URL
+Architecture</a></li>
+<li><a href="#test-conditions-before-open-use"
+id="toc-test-conditions-before-open-use">Test Conditions Before Open
+Use</a></li>
+<li><a href="#enquiry--rfq-flow" id="toc-enquiry--rfq-flow">Enquiry /
+RFQ Flow</a></li>
+<li><a href="#lightweight-admin-dashboard"
+id="toc-lightweight-admin-dashboard">Lightweight Admin
+Dashboard</a></li>
+<li><a href="#storage--deployment-foundation"
+id="toc-storage--deployment-foundation">Storage &amp; Deployment
+Foundation</a></li>
+<li><a href="#manual-batch-publish-flow"
+id="toc-manual-batch-publish-flow">Manual Batch Publish Flow</a></li>
+<li><a href="#handover--training--warranty"
+id="toc-handover--training--warranty">Handover / Training /
+Warranty</a></li>
+</ul></li>
+<li><a href="#billing-method" id="toc-billing-method">Billing
+Method</a></li>
+<li><a href="#reference-roadmap-only--not-included-in-price"
+id="toc-reference-roadmap-only--not-included-in-price">Reference Roadmap
+Only — Not Included In Price</a></li>
+<li><a href="#phase-2--sales-flow--lead-handling-enhancements"
+id="toc-phase-2--sales-flow--lead-handling-enhancements">Phase 2 — Sales
+Flow &amp; Lead Handling Enhancements</a>
+<ul>
+<li><a href="#reference-scope-only"
+id="toc-reference-scope-only">Reference Scope Only</a></li>
+</ul></li>
+<li><a
+href="#phase-3--client-portal-order-history--operational-enhancements"
+id="toc-phase-3--client-portal-order-history--operational-enhancements">Phase
+3 — Client Portal, Order History &amp; Operational Enhancements</a>
+<ul>
+<li><a href="#reference-scope-only-1"
+id="toc-reference-scope-only-1">Reference Scope Only</a></li>
+</ul></li>
+<li><a href="#estimated-timeline" id="toc-estimated-timeline">Estimated
+Timeline</a></li>
+<li><a href="#storage-recommendation"
+id="toc-storage-recommendation">Storage Recommendation</a></li>
+<li><a
+href="#architecture-note--manual-batch-static-publish-vs-laravel-ssr"
+id="toc-architecture-note--manual-batch-static-publish-vs-laravel-ssr">Architecture
+Note — Manual Batch Static Publish vs Laravel SSR</a></li>
+<li><a href="#scope-assumptions" id="toc-scope-assumptions">Scope
+Assumptions</a></li>
+</ul></li>
+</ul></div></nav>
     <article>
-      <div class="meta"><span>Last updated: 2026-04-30 00:58 MYT</span><span>Online HTML quotation</span></div>
-      <h1 id="celectric-website-redesign-quotation"><a class="heading-anchor" href="#celectric-website-redesign-quotation">Celectric Website Redesign
-Quotation</a></h1>
-<h2 id="purpose"><a class="heading-anchor" href="#purpose">Purpose</a></h2>
+      <div class="meta"><span>Last updated: 2026-04-30 09:31 MYT</span><span>Online HTML quotation</span></div>
+      <section id="celectric-website-redesign-quotation" class="level1">
+<h1>Celectric Website Redesign Quotation</h1>
+<section id="purpose" class="level2">
+<h2>Purpose</h2>
 <p>Client-facing quotation for Celectric website redesign and digital
 platform upgrade.</p>
 <p>This quotation prices <strong>Phase 1 only</strong> as the MVP launch
 scope. Later phases are included as reference only so the client
 understands the future roadmap, but they are <strong>not included in the
 quoted price</strong>.</p>
-<h2 id="project-direction"><a class="heading-anchor" href="#project-direction">Project Direction</a></h2>
+</section>
+<section id="project-direction" class="level2">
+<h2>Project Direction</h2>
 <p>Celectric website should be built as an <strong>industrial catalog +
 enquiry platform</strong>, not only a static company profile
 website.</p>
-<p>The platform should support: - searchable product catalog - brand and
-category browsing - quotation / enquiry flow - product specification
-documents - scalable product growth around <strong>3,000+
-products</strong> - future client portal and order document access</p>
-<h2 id="recommended-architecture"><a class="heading-anchor" href="#recommended-architecture">Recommended Architecture</a></h2>
+<p>The platform should support:</p>
+<ul>
+<li>searchable product catalog</li>
+<li>brand and category browsing</li>
+<li>quotation / enquiry flow</li>
+<li>product specification documents</li>
+<li>scalable product growth around <strong>3,000+ products</strong></li>
+<li>future client portal and order document access</li>
+</ul>
+</section>
+<section id="recommended-architecture" class="level2">
+<h2>Recommended Architecture</h2>
 <p>Use a <strong>manual batch static publish architecture</strong> for
 Phase 1.</p>
-<p>Recommended setup: - Laravel remains the source of truth for admin
-dashboard, product data, categories, brands, documents, RFQ, and publish
-control - public website pages are generated as static HTML/JSON files
-during a controlled publish step - admins can update products,
-categories, brands, blog posts, and documents as draft/pending changes
-without immediately affecting the live public site - every 2-3 days, or
-whenever Celectric is ready, an admin can run a manual <strong>Publish
-Static Site</strong> action - the publish job generates the public
-pages/data, deploys them to static hosting/CDN, and refreshes affected
-cache - Cloudflare R2 stores product images, product specification PDFs,
-and future private client/order documents</p>
-<p>Why this is recommended for Phase 1: - the public website is fast,
-stable, and CDN-friendly - product/admin work can be batched and checked
-before going live - Celectric avoids the complexity of real-time
-incremental publishing while still getting a static public website -
-Laravel still handles dynamic backend functions such as RFQ submission,
-configurator validation, admin management, and future integrations -
-urgent updates can still be published manually whenever needed</p>
+<p>Recommended setup:</p>
+<ul>
+<li>Laravel remains the source of truth for admin dashboard, product
+data, categories, brands, documents, RFQ, and publish control</li>
+<li>public website pages are generated as static HTML/JSON files during
+a controlled publish step</li>
+<li>admins can update products, categories, brands, blog posts, and
+documents as draft/pending changes without immediately affecting the
+live public site</li>
+<li>every 2-3 days, or whenever Celectric is ready, an admin can run a
+manual <strong>Publish Static Site</strong> action</li>
+<li>the publish job generates the public pages/data, deploys them to
+static hosting/CDN, and refreshes affected cache</li>
+<li>Cloudflare R2 stores product images, product specification PDFs, and
+future private client/order documents</li>
+</ul>
+<p>Why this is recommended for Phase 1:</p>
+<ul>
+<li>the public website is fast, stable, and CDN-friendly</li>
+<li>product/admin work can be batched and checked before going live</li>
+<li>Celectric avoids the complexity of real-time incremental publishing
+while still getting a static public website</li>
+<li>Laravel still handles dynamic backend functions such as RFQ
+submission, configurator validation, admin management, and future
+integrations</li>
+<li>urgent updates can still be published manually whenever needed</li>
+</ul>
 <p>In simple terms, Celectric staff can update many products over a few
 days, review them, then publish the updated static website in one
 controlled batch.</p>
 <hr />
-<h2 id="quoted-scope-phase-1-only"><a class="heading-anchor" href="#quoted-scope-phase-1-only">Quoted Scope — Phase 1 Only</a></h2>
-<h1 id="phase-1-core-website-lightweight-admin-dashboard"><a class="heading-anchor" href="#phase-1-core-website-lightweight-admin-dashboard">Phase 1 — Core
-Website + Lightweight Admin Dashboard</a></h1>
-<h2 id="phase-1-total-price"><a class="heading-anchor" href="#phase-1-total-price">Phase 1 Total Price</a></h2>
+</section>
+<section id="quoted-scope--phase-1-only" class="level2">
+<h2>Quoted Scope — Phase 1 Only</h2>
+</section>
+</section>
+<section id="phase-1--core-website--lightweight-admin-dashboard"
+class="level1">
+<h1>Phase 1 — Core Website + Lightweight Admin Dashboard</h1>
+<section id="phase-1-total-price" class="level2">
+<h2>Phase 1 Total Price</h2>
 <p><strong>RM 54,000</strong></p>
 <p>This price covers the core MVP website, catalog structure, enquiry
 flow, lightweight admin dashboard, upload/storage setup, basic launch
 search/filter behaviour, SEO foundation, deployment documentation, admin
 handover, and launch support.</p>
 <hr />
-<h2 id="phase-1-milestone-breakdown"><a class="heading-anchor" href="#phase-1-milestone-breakdown">Phase 1 Milestone Breakdown</a></h2>
+</section>
+<section id="phase-1-milestone-breakdown" class="level2">
+<h2>Phase 1 Milestone Breakdown</h2>
 <p>The project can be billed progressively after each completed
 milestone.</p>
 <table>
-<colgroup>
-<col style="width: 30%" />
-<col style="width: 30%" />
-<col style="width: 40%" />
-</colgroup>
 <thead>
 <tr>
 <th>Milestone</th>
@@ -188,8 +287,11 @@ deployment documentation, admin handover, launch support</td>
 </tbody>
 </table>
 <hr />
-<h2 id="phase-1-detailed-scope"><a class="heading-anchor" href="#phase-1-detailed-scope">Phase 1 Detailed Scope</a></h2>
-<h3 id="public-website"><a class="heading-anchor" href="#public-website">Public Website</a></h3>
+</section>
+<section id="phase-1-detailed-scope" class="level2">
+<h2>Phase 1 Detailed Scope</h2>
+<section id="public-website" class="level3">
+<h3>Public Website</h3>
 <ul>
 <li>website redesign</li>
 <li>homepage</li>
@@ -214,35 +316,58 @@ numbers</li>
 <li>mobile responsive cleanup</li>
 <li>basic SEO fields and metadata structure</li>
 </ul>
-<h3 id="phase-1-search-filter-scope"><a class="heading-anchor" href="#phase-1-search-filter-scope">Phase 1 Search / Filter Scope</a></h3>
+</section>
+<section id="phase-1-search--filter-scope" class="level3">
+<h3>Phase 1 Search / Filter Scope</h3>
 <p>Phase 1 includes <strong>basic launch catalog discovery</strong>, not
 a full advanced search system.</p>
-<p>Included in Phase 1: - product keyword search by product name, model
-number / part number, brand name, and category name - basic brand and
-category filtering on product listing pages - simple sorting, for
-example default order, A-Z, or newest if data supports it -
-search/filter behavior handled as static listing/query pages where
-practical, with Laravel API support if a dynamic query is needed</p>
-<p>Not included in Phase 1: - autocomplete dropdown suggestions -
-advanced faceted filtering by many technical specifications - complex
-comparison tools - typo-tolerant / fuzzy search engine setup -
-analytics-driven suggested products - AI search or semantic search</p>
+<p>Included in Phase 1:</p>
+<ul>
+<li>product keyword search by product name, model number / part number,
+brand name, and category name</li>
+<li>basic brand and category filtering on product listing pages</li>
+<li>simple sorting, for example default order, A-Z, or newest if data
+supports it</li>
+<li>search/filter behavior handled as static listing/query pages where
+practical, with Laravel API support if a dynamic query is needed</li>
+</ul>
+<p>Not included in Phase 1:</p>
+<ul>
+<li>autocomplete dropdown suggestions</li>
+<li>advanced faceted filtering by many technical specifications</li>
+<li>complex comparison tools</li>
+<li>typo-tolerant / fuzzy search engine setup</li>
+<li>analytics-driven suggested products</li>
+<li>AI search or semantic search</li>
+</ul>
 <p>These advanced search/discovery items belong in Phase 2 after the
 product data structure and launch catalog are stable.</p>
-<h3 id="ui-design-scope-for-phase-1b"><a class="heading-anchor" href="#ui-design-scope-for-phase-1b">UI / Design Scope for Phase
-1B</a></h3>
+</section>
+<section id="ui--design-scope-for-phase-1b" class="level3">
+<h3>UI / Design Scope for Phase 1B</h3>
 <p>Phase 1B includes UI direction and responsive page templates for the
-following agreed screens: - homepage - product listing page - product
-detail page - brand listing / brand detail pattern - category listing /
-category detail pattern - enquiry / RFQ page - blog / insights listing
-and article pattern - basic admin layout direction for
-dashboard/forms</p>
-<p>Included revision allowance: - 1 initial UI direction round - up to 2
-revision rounds on the agreed page templates - responsive adjustment for
-desktop, tablet, and mobile layouts</p>
+following agreed screens:</p>
+<ul>
+<li>homepage</li>
+<li>product listing page</li>
+<li>product detail page</li>
+<li>brand listing / brand detail pattern</li>
+<li>category listing / category detail pattern</li>
+<li>enquiry / RFQ page</li>
+<li>blog / insights listing and article pattern</li>
+<li>basic admin layout direction for dashboard/forms</li>
+</ul>
+<p>Included revision allowance:</p>
+<ul>
+<li>1 initial UI direction round</li>
+<li>up to 2 revision rounds on the agreed page templates</li>
+<li>responsive adjustment for desktop, tablet, and mobile layouts</li>
+</ul>
 <p>Additional redesign directions, new page types, or repeated revisions
 after approval are treated as change requests.</p>
-<h3 id="product-catalog-foundation"><a class="heading-anchor" href="#product-catalog-foundation">Product Catalog Foundation</a></h3>
+</section>
+<section id="product-catalog-foundation" class="level3">
+<h3>Product Catalog Foundation</h3>
 <ul>
 <li>product data import preparation and import-ready field
 structure</li>
@@ -257,17 +382,15 @@ data/admin readiness</li>
 products</li>
 <li>canonical URL handling for individual model-number pages</li>
 </ul>
-<h3 id="option-architecture-function-of-each-table"><a class="heading-anchor" href="#option-architecture-function-of-each-table">Option Architecture
-— Function of Each Table</a></h3>
+</section>
+<section id="option-architecture--function-of-each-table"
+class="level3">
+<h3>Option Architecture — Function of Each Table</h3>
 <p>The option architecture allows Celectric to manage configurable
 industrial products where a base product can generate multiple model
 numbers or part numbers based on selected options.</p>
 <p>Recommended table functions:</p>
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
 <tr>
 <th>Table</th>
@@ -307,30 +430,46 @@ description, canonical URL, and index status.</td>
 </tr>
 </tbody>
 </table>
-<p>This structure supports: - option-based model number generation -
-configurable product enquiry flow - validation of incompatible option
-combinations - SEO pages for selected important final model numbers -
-future price add-on logic if Celectric wants to show pricing or internal
-costing later</p>
+<p>This structure supports:</p>
+<ul>
+<li>option-based model number generation</li>
+<li>configurable product enquiry flow</li>
+<li>validation of incompatible option combinations</li>
+<li>SEO pages for selected important final model numbers</li>
+<li>future price add-on logic if Celectric wants to show pricing or
+internal costing later</li>
+</ul>
 <p>Phase 1 covers a <strong>configurable product foundation plus
 RFQ-ready configurator for the approved launch dataset only</strong>. It
 is not positioned as a complete CPQ system.</p>
-<p>Included in Phase 1: - database structure for option groups, option
-values, option rules, and approved configurations - product-page option
-selection UI for approved configurable products - live model/part-number
-display for selected options - shareable configuration URL restore
-behavior - backend validation before RFQ acceptance - RFQ capture of
-selected configuration details</p>
-<p>Not included in Phase 1: - full CPQ pricing engine - automated
-quotation calculation - complex engineering rule engine across the
-entire catalog - inventory/stock validation - ERP/Odoo-driven
-configuration sync - public checkout or payment - full validation of
-every future product combination not supplied in the launch dataset</p>
+<p>Included in Phase 1:</p>
+<ul>
+<li>database structure for option groups, option values, option rules,
+and approved configurations</li>
+<li>product-page option selection UI for approved configurable
+products</li>
+<li>live model/part-number display for selected options</li>
+<li>shareable configuration URL restore behavior</li>
+<li>backend validation before RFQ acceptance</li>
+<li>RFQ capture of selected configuration details</li>
+</ul>
+<p>Not included in Phase 1:</p>
+<ul>
+<li>full CPQ pricing engine</li>
+<li>automated quotation calculation</li>
+<li>complex engineering rule engine across the entire catalog</li>
+<li>inventory/stock validation</li>
+<li>ERP/Odoo-driven configuration sync</li>
+<li>public checkout or payment</li>
+<li>full validation of every future product combination not supplied in
+the launch dataset</li>
+</ul>
 <p>If Celectric later wants a full CPQ system, that should be scoped as
 a separate Phase 2/3 module after the launch configurator data is
 proven.</p>
-<h3 id="manual-batch-static-publish-compatibility"><a class="heading-anchor" href="#manual-batch-static-publish-compatibility">Manual Batch Static
-Publish Compatibility</a></h3>
+</section>
+<section id="manual-batch-static-publish-compatibility" class="level3">
+<h3>Manual Batch Static Publish Compatibility</h3>
 <p>This configuration architecture is compatible with manual batch
 static publishing:</p>
 <ul>
@@ -354,24 +493,25 @@ options.</p>
 <p>Example:</p>
 <pre class="text"><code>EE650 + T2 + J3 + L100 + P1 + BD5
 = EE650-T2J3L100P1BD5</code></pre>
-<p>Important condition: - customers can see the part number update
-immediately while selecting options - the displayed part number is for
-convenience only; the backend still checks whether the selected
-combination is valid before accepting the enquiry - this reduces wrong
-enquiries caused by invalid model combinations - when admins update
-products or options, the website data should refresh automatically where
-needed</p>
-<h3 id="configurator-vs-autocomplete-filter"><a class="heading-anchor" href="#configurator-vs-autocomplete-filter">Configurator vs
-Autocomplete / Filter</a></h3>
+<p>Important condition:</p>
+<ul>
+<li>customers can see the part number update immediately while selecting
+options</li>
+<li>the displayed part number is for convenience only; the backend still
+checks whether the selected combination is valid before accepting the
+enquiry</li>
+<li>this reduces wrong enquiries caused by invalid model
+combinations</li>
+<li>when admins update products or options, the website data should
+refresh automatically where needed</li>
+</ul>
+</section>
+<section id="configurator-vs-autocomplete--filter" class="level3">
+<h3>Configurator vs Autocomplete / Filter</h3>
 <p>Product configuration is not the same as autocomplete or catalog
 filtering. This distinction is important so Phase 1 remains focused and
 does not become a full advanced-search project.</p>
 <table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
 <thead>
 <tr>
 <th>Feature</th>
@@ -408,20 +548,20 @@ ranges.</td>
 </tr>
 </tbody>
 </table>
-<p>Recommended interpretation: - Phase 1 basic search/filter helps the
-customer find a product at launch - Phase 2 autocomplete and advanced
-filtering improve discovery after launch - configurator helps the
-customer choose the exact model/part number after entering one approved
-configurable product</p>
-<h3 id="three-layer-product-url-architecture"><a class="heading-anchor" href="#three-layer-product-url-architecture">Three-Layer Product URL
-Architecture</a></h3>
+<p>Recommended interpretation:</p>
+<ul>
+<li>Phase 1 basic search/filter helps the customer find a product at
+launch</li>
+<li>Phase 2 autocomplete and advanced filtering improve discovery after
+launch</li>
+<li>configurator helps the customer choose the exact model/part number
+after entering one approved configurable product</li>
+</ul>
+</section>
+<section id="three-layer-product-url-architecture" class="level3">
+<h3>Three-Layer Product URL Architecture</h3>
 <p>Celectric should use a three-layer product URL structure:</p>
 <table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
 <thead>
 <tr>
 <th>Layer</th>
@@ -451,15 +591,22 @@ part numbers such as EE650-T2J3L100P1BD5.</td>
 </tr>
 </tbody>
 </table>
-<p>Recommended URL rule: - use stable numeric option group/value IDs in
-query parameters for restore behavior - display readable option codes
-and generated part numbers in the UI, email/RFQ, and approved SEO pages
-- keep tracking parameters such as <code>srsltid</code> out of canonical
-URLs - each important configured model number should have a clean
-canonical SEO URL - lesser/unimportant combinations can remain shareable
-but noindex if needed</p>
-<h3 id="test-conditions-before-open-use"><a class="heading-anchor" href="#test-conditions-before-open-use">Test Conditions Before Open
-Use</a></h3>
+<p>Recommended URL rule:</p>
+<ul>
+<li>use stable numeric option group/value IDs in query parameters for
+restore behavior</li>
+<li>display readable option codes and generated part numbers in the UI,
+email/RFQ, and approved SEO pages</li>
+<li>keep tracking parameters such as <code>srsltid</code> out of
+canonical URLs</li>
+<li>each important configured model number should have a clean canonical
+SEO URL</li>
+<li>lesser/unimportant combinations can remain shareable but noindex if
+needed</li>
+</ul>
+</section>
+<section id="test-conditions-before-open-use" class="level3">
+<h3>Test Conditions Before Open Use</h3>
 <p>Before opening the configuration feature for public use, the
 following checks should pass.</p>
 <p>Open-use validation applies to the Phase 1 launch dataset and
@@ -467,14 +614,14 @@ approved configurable product set. Full validation across all future
 product combinations depends on final supplied data and may require
 separate scope.</p>
 <ol type="1">
-<li>Main product URL test
+<li><p>Main product URL test</p>
 <ul>
 <li><code>/products/{product-slug}</code> loads correctly</li>
 <li>product title, brand, category, datasheet, and enquiry button
 display correctly</li>
 <li>canonical URL points to the main product page</li>
 </ul></li>
-<li>Configurator URL test
+<li><p>Configurator URL test</p>
 <ul>
 <li><code>/products/{product-slug}/configure?...</code> restores
 selected options from URL parameters</li>
@@ -483,7 +630,7 @@ selected options from URL parameters</li>
 <li>final generated model number matches selected option codes</li>
 <li>enquiry/RFQ submission includes the selected configuration</li>
 </ul></li>
-<li>SEO configuration URL test
+<li><p>SEO configuration URL test</p>
 <ul>
 <li><code>/configuration/{configured-part-number}</code> loads the
 correct product and selected options</li>
@@ -494,7 +641,7 @@ options</li>
 <li>important model-number pages are indexable</li>
 <li>duplicate or low-value combinations can be marked noindex</li>
 </ul></li>
-<li>Data consistency test
+<li><p>Data consistency test</p>
 <ul>
 <li>every option value belongs to the correct option group</li>
 <li>every option group belongs to the correct product</li>
@@ -503,7 +650,7 @@ options</li>
 pages</li>
 <li>generated part number is unique where uniqueness is required</li>
 </ul></li>
-<li>RFQ/enquiry test
+<li><p>RFQ/enquiry test</p>
 <ul>
 <li>enquiry form captures product ID, configured part number, selected
 option labels, and selected option codes</li>
@@ -512,14 +659,18 @@ option labels, and selected option codes</li>
 details</li>
 </ul></li>
 </ol>
-<h3 id="enquiry-rfq-flow"><a class="heading-anchor" href="#enquiry-rfq-flow">Enquiry / RFQ Flow</a></h3>
+</section>
+<section id="enquiry--rfq-flow" class="level3">
+<h3>Enquiry / RFQ Flow</h3>
 <ul>
 <li>contact / enquiry flow</li>
 <li>RFQ / quotation submit flow</li>
 <li>enquiry form routing structure</li>
 <li>product-related enquiry support where applicable</li>
 </ul>
-<h3 id="lightweight-admin-dashboard"><a class="heading-anchor" href="#lightweight-admin-dashboard">Lightweight Admin Dashboard</a></h3>
+</section>
+<section id="lightweight-admin-dashboard" class="level3">
+<h3>Lightweight Admin Dashboard</h3>
 <ul>
 <li>product CRUD</li>
 <li>category CRUD</li>
@@ -533,8 +684,9 @@ wiring diagram</li>
 <li>sorting control</li>
 <li>basic SEO fields</li>
 </ul>
-<h3 id="storage-deployment-foundation"><a class="heading-anchor" href="#storage-deployment-foundation">Storage &amp; Deployment
-Foundation</a></h3>
+</section>
+<section id="storage--deployment-foundation" class="level3">
+<h3>Storage &amp; Deployment Foundation</h3>
 <ul>
 <li>Cloudflare R2 storage setup for product images and product
 specification PDFs</li>
@@ -549,7 +701,9 @@ static hosting/CDN</li>
 <li>cache purge / refresh for affected public URLs after publish</li>
 <li>deployment-ready launch support</li>
 </ul>
-<h3 id="manual-batch-publish-flow"><a class="heading-anchor" href="#manual-batch-publish-flow">Manual Batch Publish Flow</a></h3>
+</section>
+<section id="manual-batch-publish-flow" class="level3">
+<h3>Manual Batch Publish Flow</h3>
 <p>Recommended Phase 1 publishing flow:</p>
 <ol type="1">
 <li>Admin updates products, categories, brands, blog posts, images, or
@@ -570,38 +724,62 @@ approved data</li>
 </ol>
 <p>For urgent corrections, Celectric can run the publish action
 immediately instead of waiting for the next batch.</p>
-<h3 id="handover-training-warranty"><a class="heading-anchor" href="#handover-training-warranty">Handover / Training / Warranty</a></h3>
-<p>Phase 1 launch handover includes: - source code handover through the
-agreed repository or delivery archive - deployment notes covering
-server, environment variables, queue/scheduler/cache basics, R2 storage,
-static publish command/process, and rollback notes - admin user guide
-covering product, category, brand, blog/content, document upload,
-publish/unpublish, RFQ review, and manual static publish flow - one
-admin training / walkthrough session, remote or in-person as agreed -
-launch support during go-live</p>
-<p>Bug-fix warranty: - 60 days after Phase 1 launch / acceptance -
-covers bugs in agreed Phase 1 functionality - excludes new features, new
-page types, major design changes, third-party service outages,
-hosting/server issues outside the agreed setup, and issues caused by
-unsupported direct code/server changes after handover</p>
+</section>
+<section id="handover--training--warranty" class="level3">
+<h3>Handover / Training / Warranty</h3>
+<p>Phase 1 launch handover includes:</p>
+<ul>
+<li>source code handover through the agreed repository or delivery
+archive</li>
+<li>deployment notes covering server, environment variables,
+queue/scheduler/cache basics, R2 storage, static publish
+command/process, and rollback notes</li>
+<li>admin user guide covering product, category, brand, blog/content,
+document upload, publish/unpublish, RFQ review, and manual static
+publish flow</li>
+<li>one admin training / walkthrough session, remote or in-person as
+agreed</li>
+<li>launch support during go-live</li>
+</ul>
+<p>Bug-fix warranty:</p>
+<ul>
+<li>60 days after Phase 1 launch / acceptance</li>
+<li>covers bugs in agreed Phase 1 functionality</li>
+<li>excludes new features, new page types, major design changes,
+third-party service outages, hosting/server issues outside the agreed
+setup, and issues caused by unsupported direct code/server changes after
+handover</li>
+</ul>
 <hr />
-<h2 id="billing-method"><a class="heading-anchor" href="#billing-method">Billing Method</a></h2>
+</section>
+</section>
+<section id="billing-method" class="level2">
+<h2>Billing Method</h2>
 <p>Billing can be issued after each milestone is completed and
 accepted.</p>
-<p>Recommended billing flow: 1. Complete milestone scope 2. Submit
-milestone for review 3. Client confirms acceptance or gives revision
-feedback 4. Invoice the completed milestone amount 5. Continue to the
-next milestone</p>
+<p>Recommended billing flow:</p>
+<ol type="1">
+<li>Complete milestone scope</li>
+<li>Submit milestone for review</li>
+<li>Client confirms acceptance or gives revision feedback</li>
+<li>Invoice the completed milestone amount</li>
+<li>Continue to the next milestone</li>
+</ol>
 <p>This allows the client to pay progressively based on completed work
 instead of paying the full Phase 1 amount upfront.</p>
 <hr />
-<h2 id="reference-roadmap-only-not-included-in-price"><a class="heading-anchor" href="#reference-roadmap-only-not-included-in-price">Reference Roadmap
-Only — Not Included In Price</a></h2>
+</section>
+<section id="reference-roadmap-only--not-included-in-price"
+class="level2">
+<h2>Reference Roadmap Only — Not Included In Price</h2>
 <p>The following phases are included only as future reference. No price
 is quoted for these phases in this document.</p>
-<h2 id="phase-2-sales-flow-lead-handling-enhancements"><a class="heading-anchor" href="#phase-2-sales-flow-lead-handling-enhancements">Phase 2 — Sales
-Flow &amp; Lead Handling Enhancements</a></h2>
-<h3 id="reference-scope-only"><a class="heading-anchor" href="#reference-scope-only">Reference Scope Only</a></h3>
+</section>
+<section id="phase-2--sales-flow--lead-handling-enhancements"
+class="level2">
+<h2>Phase 2 — Sales Flow &amp; Lead Handling Enhancements</h2>
+<section id="reference-scope-only" class="level3">
+<h3>Reference Scope Only</h3>
 <p>Phase 1 includes selected important model-number SEO pages and
 <strong>basic launch search/filter</strong> only: keyword search,
 brand/category filtering, and simple sorting. Phase 2 covers broader SEO
@@ -625,9 +803,15 @@ after launch data is available</li>
 <li>SEO landing page refinement for model-number search demand</li>
 <li>large-catalog browsing refinement</li>
 </ul>
-<h2 id="phase-3-client-portal-order-history-operational-enhancements"><a class="heading-anchor" href="#phase-3-client-portal-order-history-operational-enhancements">Phase
-3 — Client Portal, Order History &amp; Operational Enhancements</a></h2>
-<h3 id="reference-scope-only-1"><a class="heading-anchor" href="#reference-scope-only-1">Reference Scope Only</a></h3>
+</section>
+</section>
+<section
+id="phase-3--client-portal-order-history--operational-enhancements"
+class="level2">
+<h2>Phase 3 — Client Portal, Order History &amp; Operational
+Enhancements</h2>
+<section id="reference-scope-only-1" class="level3">
+<h3>Reference Scope Only</h3>
 <ul>
 <li>client login portal</li>
 <li>admin-created client accounts</li>
@@ -647,56 +831,131 @@ after launch data is available</li>
 <li>optional Odoo / CRM integration planning if needed</li>
 </ul>
 <hr />
-<h2 id="estimated-timeline"><a class="heading-anchor" href="#estimated-timeline">Estimated Timeline</a></h2>
+</section>
+</section>
+<section id="estimated-timeline" class="level2">
+<h2>Estimated Timeline</h2>
 <p>Recommended Phase 1 delivery timeline: <strong>12–18
 weeks</strong></p>
-<p>Indicative milestone sequence: - Phase 1A — 1–2 weeks - Phase 1B —
-2–3 weeks - Phase 1C — 3 weeks - Phase 1D — 3–5 weeks - Phase 1E — 2–3
-weeks - Phase 1F — 2–3 weeks</p>
-<p>Timeline depends on: - speed of content and product data preparation
-- number of product records to clean or migrate - feedback and approval
-turnaround time - final admin workflow complexity</p>
+<table>
+<thead>
+<tr>
+<th>Milestone</th>
+<th style="text-align: right;">Estimated Duration</th>
+<th>Main Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phase 1A</td>
+<td style="text-align: right;">1–2 weeks</td>
+<td>Discovery, sitemap, technical planning, and content/data structure
+confirmation</td>
+</tr>
+<tr>
+<td>Phase 1B</td>
+<td style="text-align: right;">2–3 weeks</td>
+<td>UI direction, page templates, responsive frontend foundation, and
+revision rounds</td>
+</tr>
+<tr>
+<td>Phase 1C</td>
+<td style="text-align: right;">3 weeks</td>
+<td>Product catalog structure, listing/detail patterns, brands,
+categories, and model/configuration URL planning</td>
+</tr>
+<tr>
+<td>Phase 1D</td>
+<td style="text-align: right;">3–5 weeks</td>
+<td>Lightweight admin dashboard, CRUD management, publish controls,
+sorting, and SEO fields</td>
+</tr>
+<tr>
+<td>Phase 1E</td>
+<td style="text-align: right;">2–3 weeks</td>
+<td>RFQ/enquiry flow, document upload, Cloudflare R2 storage setup, and
+datasheet/download section</td>
+</tr>
+<tr>
+<td>Phase 1F</td>
+<td style="text-align: right;">2–3 weeks</td>
+<td>Manual batch static publish setup, static deployment, testing,
+documentation, handover, and launch support</td>
+</tr>
+</tbody>
+</table>
+<p>Timeline depends on:</p>
+<ul>
+<li>speed of content and product data preparation</li>
+<li>number of product records to clean or migrate</li>
+<li>feedback and approval turnaround time</li>
+<li>final admin workflow complexity</li>
+</ul>
 <hr />
-<h2 id="storage-recommendation"><a class="heading-anchor" href="#storage-recommendation">Storage Recommendation</a></h2>
+</section>
+<section id="storage-recommendation" class="level2">
+<h2>Storage Recommendation</h2>
 <p>Use <strong>Cloudflare R2</strong> for product images, product
 specification PDFs, and future private order/client documents.</p>
-<p>Recommended separation: - <code>product-images/</code> — public /
-CDN-friendly product images - <code>product-specifications/</code> —
-public download or protected download depending on business rule -
-<code>order-documents/</code> — private access only in future phases,
-using signed download links</p>
-<p>Access rules: - product images can be public/CDN-friendly for fast
-website loading - product specification PDFs can be public downloads
-unless Celectric wants restricted access - order/client documents should
-be private and accessed through secure signed links after login in a
-future phase</p>
+<p>Recommended separation:</p>
+<ul>
+<li><code>product-images/</code> — public / CDN-friendly product
+images</li>
+<li><code>product-specifications/</code> — public download or protected
+download depending on business rule</li>
+<li><code>order-documents/</code> — private access only in future
+phases, using signed download links</li>
+</ul>
+<p>Access rules:</p>
+<ul>
+<li>product images can be public/CDN-friendly for fast website
+loading</li>
+<li>product specification PDFs can be public downloads unless Celectric
+wants restricted access</li>
+<li>order/client documents should be private and accessed through secure
+signed links after login in a future phase</li>
+</ul>
 <p>The main implementation work is making uploads easy to manage,
 keeping files organised, controlling access properly, and preparing the
 structure for future private client documents.</p>
 <hr />
-<h2 id="architecture-note-manual-batch-static-publish-vs-laravel-ssr"><a class="heading-anchor" href="#architecture-note-manual-batch-static-publish-vs-laravel-ssr">Architecture
-Note — Manual Batch Static Publish vs Laravel SSR</a></h2>
+</section>
+<section
+id="architecture-note--manual-batch-static-publish-vs-laravel-ssr"
+class="level2">
+<h2>Architecture Note — Manual Batch Static Publish vs Laravel SSR</h2>
 <p>Laravel SSR remains simpler for always-live admin updates, but
 Celectric has confirmed that product updates can be accumulated and
 published manually in batches. For that working style, manual batch
 static publishing is a good Phase 1 fit.</p>
-<p>Recommended interpretation: - Laravel remains the
-backend/admin/source-of-truth - the public website is static after each
-publish - admins can update many products over 2-3 days before
-publishing - RFQ, configurator validation, admin actions, and future
-integrations still use Laravel - basic search/filter can be generated
-into static listing pages where practical, with dynamic Laravel API
-support if needed later</p>
+<p>Recommended interpretation:</p>
+<ul>
+<li>Laravel remains the backend/admin/source-of-truth</li>
+<li>the public website is static after each publish</li>
+<li>admins can update many products over 2-3 days before publishing</li>
+<li>RFQ, configurator validation, admin actions, and future integrations
+still use Laravel</li>
+<li>basic search/filter can be generated into static listing pages where
+practical, with dynamic Laravel API support if needed later</li>
+</ul>
 <p>This avoids the higher complexity of real-time incremental publishing
 while keeping the public website fast and stable.</p>
-<h2 id="scope-assumptions"><a class="heading-anchor" href="#scope-assumptions">Scope Assumptions</a></h2>
-<p>Final delivery depends on: - product data availability and
-cleanliness - final product count and import structure - content
-preparation speed - number of required page templates - feedback and
-approval turnaround time - final admin workflow requirements</p>
+</section>
+<section id="scope-assumptions" class="level2">
+<h2>Scope Assumptions</h2>
+<p>Final delivery depends on:</p>
+<ul>
+<li>product data availability and cleanliness</li>
+<li>final product count and import structure</li>
+<li>content preparation speed</li>
+<li>number of required page templates</li>
+<li>feedback and approval turnaround time</li>
+<li>final admin workflow requirements</li>
+</ul>
 <p>Any scope outside Phase 1 can be quoted separately after Phase 1 is
 completed or when the client confirms the next phase requirements.</p>
-
+</section>
+</section>
     </article>
   </div></main>
 </body>
