@@ -135,6 +135,11 @@ Additional redesign directions, new page types, or repeated revisions after appr
 - model number / configuration field mapping for imported products
 - canonical URL handling for individual model-number pages
 
+### Admin Content Editing Format
+Description fields should use **Markdown (`.md`) format**, not a WYSIWYG HTML editor.
+
+This applies to product, brand, category, and blog/content descriptions where rich text is required. The admin can provide a Markdown textarea/editor with preview if needed, but stored content should remain Markdown-first for cleaner data, easier review, safer publishing, and better portability.
+
 ### Option Architecture — Function of Each Table
 
 The option architecture allows Celectric to manage configurable industrial products where a base product can generate multiple model numbers or part numbers based on selected options.
